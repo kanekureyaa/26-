@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>常盤祭シフト管理</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            padding: 10px;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #error {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>シフト検索</h1>
+    <h2>ログイン</h2>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="パスワード"
+    >
+
+    <button onclick="login()">ログイン</button>
+
+    <p id="error"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

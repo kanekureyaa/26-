@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>日程選択</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        button {
+            display: block;
+            width: 250px;
+            padding: 15px;
+            margin: 20px auto;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #logout {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>日程選択</h1>
+
+    <p>日程を選択してください。</p>
+
+    <button onclick="location.href='day.html?day=1'">
+        1日目
+    </button>
+
+    <button onclick="location.href='day.html?day=2'">
+        2日目
+    </button>
+
+    <button onclick="location.href='day.html?day=3'">
+        3日目
+    </button>
+
+    <button id="logout" onclick="logout()">
+        ログアウト
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
